@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 
 import com.hajepierre.algo.NumberFizzBuzzer;
 
-class FlamingoTest {
+class FizzBuzzTest {
 
 	@Test
 	void test() {
 		NumberFizzBuzzer buzzer = new NumberFizzBuzzer();
-		String msg = buzzer.printFizzBuzz(2);
+		String msg = buzzer.printFizzBuzz(15);
 		System.out.println(msg);
-		assertEquals("Flamingo", msg);
+		assertEquals("FizzBuzz", msg);
 	}
 
 }
