@@ -2,39 +2,36 @@ package com.hajepierre.algo;
 
 public class NumberFizzBuzzer {
 	public String printFizzBuzz(Integer number) {
+
 		if (isMultipleOf3(number)) {
 			if (isMultipleof5(number)) {
+				//Return Pink Flamingo
 				if (isFibonacci(number)) {
 					return "Pink Flamingo";
-				}
-				// Return FizzBuzz
+				} 
+				//Return FizzBuzz
 				else {
 					return "FizzBuzz";
 				}
 			}
 			// Return Fizz
 			else {
-				if (isFibonacci(number)) {
-					return "Flamingo";
-				} else {
-					return "Fizz";
-				}
+				return "Fizz";
+
 			}
 		} else {
 			// Return Buzz
 			if (isMultipleof5(number)) {
 				return "Buzz";
-			} else { // Return Flamingo
+			} else { 
+				// Return Flamingo
 				if (isFibonacci(number)) {
-					// System.out.println("Flamingo");
 					return "Flamingo";
-				}
-				// Return the number
-				else {
-					return number.toString();
 				}
 			}
 		}
+		//Return number
+		return number.toString();
 	}
 
 	private boolean isMultipleOf3(int n) {
